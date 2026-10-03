@@ -6,6 +6,22 @@
     <title>Example Data Table with LocalStorage</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6889176328d89b3c3ef22b60' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: 'https://runtime-api.voiceflow.com'
+          },
+          versionID: 'production'
+        });
+      }
+      v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs'; v.type = 'text/javascript'; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </head>
 <body>
     <h1>Example Product List Web App</h1>
@@ -38,6 +54,7 @@
         </table>
     </div>
 
+    <footer>Desarrollado por: Alan Medina</footer>
 
     <script src="functions.js"></script>
 </body>
